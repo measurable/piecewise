@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/theorem.css" />
+  
+
+
+
+
+
+
+
+<script>
+MathJax = {
+  tex: {
+    autoload: { braket: [] },
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    tags: 'ams',
+    macros: {
+      
+      vb: ["{\\bf{#1}}", 1],
+      vi: ["{\\boldsymbol{#1}}", 1],
+      uv: ["{\\hat{\\bf{#1}}}", 1],
+      ui: ["{\\hat{\\boldsymbol{#1}}}", 1],
+      abs: ["{\\left\\vert{#1}\\right\\vert}", 1],
+      norm: ["{\\left\\Vert{#1}\\right\\Vert}", 1],
+      
+      
+      
+      grad: "{\\mathop{\\nabla}}",
+      divergence: ["{\\nabla\\cdot #1}", 1],
+      curl: ["{\\nabla\\times #1}", 1],
+      laplacian: "{\\nabla^2}",
+      dalambert: "{\\Box^2}",
+      diag: ["{\\mathop{\\mathrm{diag}\\left(#1\\right)}}", 1],
+      
+      bra: ["{\\left\\langle{#1}\\right\\vert}", 1],
+      ket: ["{\\left\\vert{#1}\\right\\rangle}", 1],
+      braket: ["{\\left\\langle{#1}\\middle\\vert{#2}\\right\\rangle}", 2],
+      matrel: ["{\\left\\langle{#1}\\middle\\vert{#2}\\middle\\vert{#3}\\right\\rangle}", 3],
+      expect: ["{\\left\\langle{#1}\\right\\rangle}", 1]
+    }
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+  <title>
+    
+      3. 정지 좌표계로부터 상대 등속 병진운동 하는 다른 좌표계로의 좌표 및 시간 변환에 관한 이론 &vert; measurable
+    
+  </title>
+</head><body>
+    <div class="sidebar">
+      <div id="measurelogo">
+        <a href='/'><img width="92" src="/images/measurelogo-003300-172.png" onmouseover="this.src='/images/measurelogo-239023-172.png'" onmouseout="this.src='/images/measurelogo-003300-172.png'"></a></div>
+      <div id="measurable">
+        <a href='/'>measurable</a>
+      </div>
+      <div class="navbar">
+        <div id="mainmenu">
+          
+  <a href="/posts/">posts</a>
+
+  <a href="/moments/">moments</a>
+
+  <a href="/surveys/">surveys</a>
+
+  <a href="/fragments/">fragments</a>
+
+  <a href="/archives/">archives</a>
+
+  <a href="/docs/">site.docs</a>
+
+        </div>
+        <div id="taxonomies">
+          
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="main shadowbox" id="article">
+      <header>
+  
+    <p class="pretag" align="center">
+      
+        
+          
+          <a href="https://measurable.github.io/categories/%ED%91%9C%ED%98%84">[표현]</a>
+        
+      
+      
+        <a href="../">움직이는 물체의 전기동역학에 관하여</a>
+      
+      
+    </p>
+    <h1> 3. 정지 좌표계로부터 상대 등속 병진운동 하는 다른 좌표계로의 좌표 및 시간 변환에 관한 이론 </h1>
+  
+  <div class="motivation">
+    
+  <div class="ref">
+    
+  </div>
+  </div>
+
+<div><hr></div>
+</header>
+      <div id="content">
+
+   <div>
+    
+
+<h4 id="i-운동학-kinematic-part">I. 운동학 (Kinematic Part)</h4>
+
+<h2 id="sect-3-정지-좌표계로부터-상대-등속-병진운동-하는-다른-좌표계로의-좌표-및-시간-변환에-관한-이론">&sect;3. 정지 좌표계로부터 상대 등속 병진운동 하는 다른 좌표계로의 좌표 및 시간 변환에 관한 이론</h2>
+
+<p>&ldquo;정지&rdquo; 공간(stationary space)에 두 개의 좌표계를 준다.</p>
+
+<p>각각은 한 점에서 나온 강체 직선 세 개가 서로 수직인 방향으로 뻗어나가는 계이다.
+두 좌표계의 \(X\)축은 겹쳐 있으며, \(Y\)축 끼리, 그리고 \(Z\)축 끼리는 평행하다.
+각 좌표계에 강체로 만들어진 자와 시계들이 있으며, 그 자와 시계들은 모든 면에서 서로 같은 것들이라고  하자.</p>
+
+<p>둘 중 한 좌표계(\(k\))의 원점에 다른 정지 좌표계(\(K\))의 \(x\) 값이 증가하는 방향으로 등속 \(v\)를 주자.
+해당 좌표계의 좌표축들과 자, 그리고 시계도 동일한 속도를 얻는다.
+그러면 정지 좌표계 \(K\)의 임의의 시각 \(t\)에 움직이는 좌표축의 특정 위치가 대응되며,
+대칭성</p>
+
+<p>을 감안하면 움직이는 좌표축들은 각각 대응되는 정지 좌표계의 좌표축과 평행을 유지하며 운동한다고 가정할 수 있다.</p>
+
+<p>이제 정지 좌표계 \(K\)에서 정지해있는 자로 재는 공간 측정과, 움직이는 좌표계 \(k\)에서 움직이는 자로 재는 공간 측정을 생각하자.
+두 측정을 통해 각각 좌표 \(x,y,z\)와 \(\xi,\eta,\zeta\)를 얻었다고 하자.
+또, 정지 좌표계의 모든 점에 각각 시계가 있어서 임의의 점에서의 시간 \(t\)를 &sect;1.에서 준 방법대로 빛 신호를 통해 결정한다고 하자.
+마찬가지로, 움직이는 좌표계에도 모든 점에 그 점에 대해 상대적 멈춤 상태인 시계가 있어서 &sect;1.의 방법으로 점들 사이의 빛 신호를 이용해서 시간 \(\tau\)를 결정할 수 있다고 하자.</p>
+
+<p>임의의 좌표값 \(x,y,z,t\)는 정지 좌표계를 기준으로 사건의 장소와 시간를 완전하게 정의하며, 그에 대응하여 해당 사건을 좌표계 \(k\)를 기준으로 결정하는 좌표값 \(\xi,\eta,\zeta,\tau\)가 존재한다.
+이제 우리가 할 일은 이 두 좌표들 사이의 관계를 주는 방정식을 찾는 것이다.</p>
+
+<p>먼저, 공간과 시간이 가지는 균질성(the properties of homogeneity) 때문에 방정식은 선형(linear)이어야 한다.</p>
+
+<p>\(x&rsquo;=x-vt\)로 두면 좌표계 \(k\)를 기준으로 멈춰있는 점의 좌표는 당연히 시간에 관계 없이 \(x&rsquo;,y,z\)이다.
+먼저 \(\tau\)를 정의하는 \(x&rsquo;,y,z\)와 \(t\)의 함수를 구하자.
+이를 위해서는, 좌표계 \(k\) 기준으로 정지 상태이고 &sect;1.의 규칙에 따라 동기화된 시계들이 주는 값으로만 이루어진 방정식으로 \(\tau\)를 나타내야 한다.</p>
+
+<p>좌표계 \(k\)의 원점에서 시각 \(\tau_0\)에 \(X\)축을 따라 \(x&rsquo;\)을 향해 출발한 광선이 시각 \(\tau_1\)에 \(x&rsquo;\)에서 반사되어 \(\tau_2\)에 다시 원점에 도착했다고 하자.
+그러면 \(\frac{1}{2}\left(\tau_0+\tau_2\right)=\tau_1\)</p>
+
+<p>이다.
+여기에 함수 \(\tau\)의 변수 값들을 대입하고, 정지 좌표계에서의 광속 불변을 적용하면 다음 식을 얻는다.
+\[\begin{aligned}
+\frac{1}{2}\left[\tau(0,0,0,t)+\tau\left(0,0,0,t+\frac{x&rsquo;}{c-v}+\frac{x&rsquo;}{c+v}\right)\right]
+\newline
+=\tau\left(x&rsquo;,0,0,t+\frac{x&rsquo;}{c-v}\right).
+\end{aligned}\]</p>
+
+<p>여기서 \(x&rsquo;\)을 무한히 작게 잡으면,
+\[
+\frac{1}{2}\left(\frac{1}{c-v}+\frac{1}{c+v}\right)\frac{\partial\tau}{\partial t}=\frac{\partial\tau}{\partial x&rsquo;}+\frac{1}{c-v}\frac{\partial\tau}{\partial t},
+\]
+즉
+\[
+\frac{\partial\tau}{\partial x&rsquo;}+\frac{v}{c^2-v^2}\frac{\partial\tau}{\partial t}=0
+\]
+이다.</p>
+
+<p>광선의 출발점을 좌표계의 원점 대신 다른 임의의 점으로 잡아도 되니까 위에서 얻은 방정식은 임의의 \(x&rsquo;,y,z\)에 대하여 참이다.</p>
+
+<p>같은 방법을 \(Y\)축과 \(Z\)축에 적용한다. 정지 좌표계에서 보면 빛 전파 속도의 이 두 좌표축 방향 성분이 항상 \(\sqrt{c^2-v^2}\)이라는 사실을 감안하면 다음 관계를 얻는다.
+\[
+\frac{\partial\tau}{\partial y}=0,\quad
+\frac{\partial\tau}{\partial z}=0
+\]
+\(\tau\)가 <strong>선형</strong>\(\) 함수이므로, 이들 방정식을 풀어
+\[
+\tau=a\left(t-\frac{v}{c^2-v^2}x&rsquo;\right)
+\]
+을 얻는다.</p>
+
+<p>여기서 \(a\)는 아직은 미지인 함수 \(\phi(v)\)이다.
+간단히 하기 위해 \(k\)의 원점에서 \(t=0\)일 때 \(\tau=0\)으로 놓았다.</p>
+
+<p>이 결과를 이용하면 좌표 \(\xi,\eta,\zeta\)도 쉽게 구할 수 있다.
+(광속 불변 및 상대성 원리의 요구에 따라) 빛은 움직이는 좌표계를 기준으로 해도 역시 \(c\)의 속도로 전파된다는 사실을 방정식으로 나타내면 된다.
+시각 \(\tau=0\)에 광선이 \(\xi\) 값이 증가하는 방향으로 방출되었다면</p>
+
+<p>\[
+\xi=c\tau\quad 즉 \quad\xi=ac\left(t-\frac{v}{c^2-v^2}x&rsquo;\right)
+\]
+이다.
+그런데 정지 좌표계에서 측정하면 \(k\)의 출발점에 대한 광선의 상대속도가 \(c-v\)이므로
+\[
+\frac{x&rsquo;}{c-v}=t
+\]
+이다.
+이 \(t\) 값을 \(\xi\)에 관한 위의 방정식에 대입하면 다음을 얻는다.
+\[
+\xi=a\frac{c^2}{c^2-v^2}x&rsquo;.
+\]
+같은 방법으로, 다른 두 좌표축을 따라 움직이는 광선을 생각하면 다음 관계를 얻는다.
+\[
+\eta=c\tau=ac\left(t-\frac{v}{c^2-v^2}x&rsquo;\right)
+\]
+단,
+\[
+\frac{y}{\sqrt{c^2-v^2}}=t,\quad x&rsquo;=0
+\]
+이다.
+따라서
+\[
+\eta=a\frac{c}{\sqrt{c^2-v^2}}y\quad 이고 \quad
+\zeta=a\frac{c}{\sqrt{c^2-v^2}}z
+\]
+이다.</p>
+
+<p>\(x&rsquo;\)을 다시 \(x\)의 식으로 바꾸면 다음 결과를 얻는다.
+\[\begin{aligned}
+\tau&amp;=\phi(v)\beta\left(t-\frac{v}{c^2}x\right),
+\newline
+\xi&amp;=\phi(v)\beta\left(x-vt\right),
+\newline
+\eta&amp;=\phi(v)y,
+\newline
+\zeta&amp;=\phi(v)z.
+\end{aligned}\]
+단,
+\[
+\beta=\frac{1}{\sqrt{1-\left(\frac vc\right)^2}}
+\]
+이고, \(\phi\)는 \(v\)의 함수지만 아직 결정되지 않았다.
+움직이는 좌표계의 초기 위치와 \(\tau\)의 영점에 관한 아무런 가정도 없다면 위 등식들 우변에 각각 상수항을 더해 주어야 한다.</p>
+
+<p>이제, 정지 좌표계에서 광선의 속도가 \(c\)라고 전제했다면 움직이는 좌표계에서 측정해도 여전히 \(c\)의 속도로 전파된다는 사실을 증명해야 한다. 광속 불변의 원리가 상대성 원리와 양립할 수 있다는 것이 아직 증명되지 않았기 때문이다.</p>
+
+<p>두 좌표계의 원점이 일치하는 시각 \(t=\tau=0\)에 그 원점에서 구면파가 \(K\) 좌표계 기준 속도 \(c\)로 방출된다고 하자.
+이 파가 점 \((x,y,z)\)에 도달하는 순간에
+\[
+x^2+y^2+z^2=c^2t^2
+\]
+을 만족한다.</p>
+
+<p>앞의 변환 공식을 이용해서 이 방정식을 변환하면, 간단한 계산을 통해</p>
+
+<p>\[
+\xi^2+\eta^2+\zeta^2=c^2\tau^2
+\]
+을 얻는다.</p>
+
+<p>따라서, 이 파는 움직이는 좌표계에서 볼 때도 똑같이 전파 속도가 \(c\)인 구면파이다.
+이 사실은 우리의 두 근본 원리가 양립 가능함을 보여준다.<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">1</a></sup></p>
+
+<p>앞에서 얻은 변환 공식은 \(v\)에 관한 미지의 함수 \(\phi\)를 포함하고 있다.
+이제 이 함수를 구하자.</p>
+
+<p>이를 위해,
+좌표계 \(k\)에 대해 \(X\)축</p>
+
+<p>에 평행한 방향으로 병진운동하는 세번째 좌표계 \(K&rsquo;\)을 도입한다. \(K&rsquo;\)의 원점은 \(X\)축 위에서 \(-v\)의 속도로 움직인다.</p>
+
+<p>시간 \(t=0\)에 세 좌표축의 원점이 일치하고 \(t=x=y=z=0\)일 때 좌표계 \(K&rsquo;\)의 시간 \(t&rsquo;\)이 \(0\)이라고 하자.
+좌표계 \(K&rsquo;\)에서 측정한 좌표를 각각 \(x&rsquo;,y&rsquo;,z&rsquo;\)이라 하고 변환 공식을 두 번 적용하면
+다음 결과를 얻는다.
+\[\begin{aligned}
+t&rsquo;&amp;=\phi(-v)\beta(-v)\left(\tau+\frac{v}{c^2}\xi\right)&amp;=\phi(v)\phi(-v)t,
+\newline
+x&rsquo;&amp;=\phi(-v)\beta(-v)\left(\xi+v\tau\right)&amp;=\phi(v)\phi(-v)x,
+\newline
+y&rsquo;&amp;=\phi(-v)\eta&amp;=\phi(v)\phi(-v)y,
+\newline
+z&rsquo;&amp;=\phi(-v)\zeta&amp;=\phi(v)\phi(-v)z.
+\end{aligned}\]</p>
+
+<p>\(x,y,z\)와 \(x&rsquo;,y&rsquo;,z&rsquo;\) 사이의 관계가 시간 \(t\)를 포함하지 않으므로 두 좌표계 \(K\)와 \(K&rsquo;\)는 서로에 대해 멈춰있다. 또, \(K\)에서 \(K&rsquo;\)으로의 변환이 항등변환임은 자명하다. 그래서,
+\[
+\phi(v)\phi(-v)=1
+\]
+이다.
+이제 \(\phi(v)\)이 가지는 의미를 알아보자.
+좌표계 \(k\)의 \(Y\)축 위에서 \(\xi=0,\eta=0,\zeta=0\)과 \(\xi=0,\eta=l,\zeta=0\) 사이의 부분을 생각해 보자.
+\(Y\)축의 이 부분은, 좌표계 \(K\)에 대해서는 길이 방향에 수직인 속도 \(v\)로 상대 운동하는 막대이다. 이 막대 양 끝에 대한 \(K\)의 좌표는 각각
+\[
+x_1=vt,\quad y_1=\frac{l}{\phi(v)},\quad z_1=0
+\]
+과
+\[
+x_2=vt,\quad y_2=0,\quad z_2=0
+\]
+이다.
+그러므로 막대의 길이를 \(K\)에서 측정하면 \(l/\phi(v)\)이다.
+이 사실이 함수 \(\phi(v)\)의 의미를 준다.
+대칭성을 감안할 때, 축 방향에 수직으로 움직이는 막대의 길이를 정지 좌표계에서 측정하면 오직 그 속도에만 영향받을 뿐, 방향이나 접근하는가 멀어지는가(sense of the motion)에는 무관하다는 것은 이제 자명하다.
+따라서 \(v\)와 \(-v\)를 맞바꿔도 정지 좌표계에서 측정하는 막대의 길이는 변하지 않는다.
+즉, \(l/\phi(v)=l/\phi(-v)\)이므로
+\[
+\phi(v)=\phi(-v)
+\]
+이다.
+이 결과와 앞에서 얻은 관계식으로부터 \(\phi(v)=1\)을 얻는다. 결국, 변환 공식은 다음과 같이 된다.
+\[\begin{aligned}
+\tau&amp;=\beta\left(t-\frac{v}{c^2}x\right),
+\newline
+\xi&amp;=\beta\left(x-vt\right),
+\newline
+\eta&amp;=y,
+\newline
+\zeta&amp;=z,
+\end{aligned}\]
+단,
+\[
+\beta=\frac{1}{\sqrt{1-\left(\frac vc\right)^2}}
+\]
+이다.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:4">로렌츠 변환 공식은, 관계식 \(x^2+y^2+z^2=c^2t^2\)을 변환하면 두번째 관계식 \(\xi^2+\eta^2+\zeta^2=c^2\tau^2\)이 나와야 한다는 조건으로부터 유도하는 편이 더 간단하다.
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+  </div>
+</div>
+    </div>
+    <div class="main" id="credit"><footer>
+  <div id="credit">
+    <p>page created: 2019.09.22
+      
+        in surveys
+      
+      <span id="pretag">SECTIONS & TAXONOMIES</span>:
+      
+  <a href="https://measurable.github.io/fragments/">fragments</a>
+
+  <a href="https://measurable.github.io/moments/">moments</a>
+
+  <a href="https://measurable.github.io/archives/">archives</a>
+
+  <a href="https://measurable.github.io/surveys/">surveys</a>
+
+  <a href="https://measurable.github.io/posts/">posts</a>
+
+  <a href="https://measurable.github.io/docs/">docs</a>
+
+      
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+      measurable, 2019.
+      <a href="https://www.mathjax.org" target="_blank">
+        <img title="Powered by MathJax"
+             src="https://www.mathjax.org/badge/badge.gif"
+             border="0" alt="Powered by MathJax" width="56"/>
+      </a>
+    </p>
+  </div>
+</footer></div>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/theorem.css" />
+  
+
+
+
+
+
+
+
+<script>
+MathJax = {
+  tex: {
+    autoload: { braket: [] },
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    tags: 'ams',
+    macros: {
+      
+      vb: ["{\\bf{#1}}", 1],
+      vi: ["{\\boldsymbol{#1}}", 1],
+      uv: ["{\\hat{\\bf{#1}}}", 1],
+      ui: ["{\\hat{\\boldsymbol{#1}}}", 1],
+      abs: ["{\\left\\vert{#1}\\right\\vert}", 1],
+      norm: ["{\\left\\Vert{#1}\\right\\Vert}", 1],
+      
+      
+      
+      grad: "{\\mathop{\\nabla}}",
+      divergence: ["{\\nabla\\cdot #1}", 1],
+      curl: ["{\\nabla\\times #1}", 1],
+      laplacian: "{\\nabla^2}",
+      dalambert: "{\\Box^2}",
+      diag: ["{\\mathop{\\mathrm{diag}\\left(#1\\right)}}", 1],
+      
+      bra: ["{\\left\\langle{#1}\\right\\vert}", 1],
+      ket: ["{\\left\\vert{#1}\\right\\rangle}", 1],
+      braket: ["{\\left\\langle{#1}\\middle\\vert{#2}\\right\\rangle}", 2],
+      matrel: ["{\\left\\langle{#1}\\middle\\vert{#2}\\middle\\vert{#3}\\right\\rangle}", 3],
+      expect: ["{\\left\\langle{#1}\\right\\rangle}", 1]
+    }
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+  <title>
+    
+      weinberg on heisenberg 1925 &vert; measurable
+    
+  </title>
+</head><body>
+    <div class="sidebar">
+      <div id="measurelogo">
+        <a href='/'><img width="92" src="/images/measurelogo-003300-172.png" onmouseover="this.src='/images/measurelogo-239023-172.png'" onmouseout="this.src='/images/measurelogo-003300-172.png'"></a></div>
+      <div id="measurable">
+        <a href='/'>measurable</a>
+      </div>
+      <div class="navbar">
+        <div id="mainmenu">
+          
+  <a href="/posts/">posts</a>
+
+  <a href="/moments/">moments</a>
+
+  <a href="/surveys/">surveys</a>
+
+  <a href="/fragments/">fragments</a>
+
+  <a href="/archives/">archives</a>
+
+  <a href="/docs/">site.docs</a>
+
+        </div>
+        <div id="taxonomies">
+          
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="main shadowbox" id="article">
+      <header>
+  
+    <p class="pretag" align="center">
+      
+        
+          
+          <a href="https://measurable.github.io/categories/generic">[generic]</a>
+        
+      
+      
+        <a href="../">&#34;오직 관측 가능한 양들 사이의 관계 만으로...&#34;</a>
+      
+      
+    </p>
+    <h1> Weinberg on Heisenberg 1925 </h1>
+  
+  <div class="motivation">
+    
+  <div class="ref">
+    
+  </div>
+  </div>
+
+<div><hr></div>
+</header>
+      <div id="content">
+
+   <div>
+    <p>If there is any moment that marks the birth of quantum mechanics, it would be a vacation taken by the young Werner Heisenberg in 1925. Suffering from hay fever, Heisenberg fled the flowering fields near Göttingen for the lonely North Sea island of Helgoland. Heisenberg and his colleagues had for several years been struggling with a problem raised in 1913 by Niels Bohr&rsquo;s theory of the atom: why do electrons in atoms occupy only certain allowed orbits with certain definite energies? On Helgoland Heisenberg made a fresh start. He decided that, because no one could ever directly observe the orbit of an electron in an atom, he would deal only with quantities that could be measured: specifically, with the energies of the quantum states in which all the atom&rsquo;s electrons occupy allowed orbits, and with the rates at which an atom might spontaneously make a transition from any one of these quantum states to any other state by emitting a particle of light, a photon. Heisenberg made what he called a &ldquo;table&rdquo; from these rates, and he introduced mathematical operations on this table that would yield new tables, one type of table for each physical quantity like the position or the velocity or the square of the velocity of an electron.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> Knowing how the energy of a particle in a simple system depends on its velocity and position, Heisenberg was able in this way to calculate a table of the energies of the system in its various quantum states, in a sort of parody of the way that the energy of a planet is calculated in Newton&rsquo;s physics from a knowledge of its position and velocity.</p>
+
+<p>If the reader is mystified at what Heisenberg was doing, he or she is not alone. I have tried several times to read the paper that Heisenberg wrote on returning from Helgoland, and, although I think I understand quantum mechanics, I have never understood Heisenberg&rsquo;s motivations for the mathematical steps in his paper.<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> Theoretical physicists in their most successful work tend to play one of two roles: they are either sages or magicians. The sage-physicist reasons in an orderly way about physical problems on the basis of fundamental ideas of the way that nature ought to be.<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup> Einstein, for example, in developing the general theory of relativity, was playing the role of a sage; he had a well-defined problem&mdash;how to fit the theory of gravitation into the new view of space and time that he had proposed in 1905 as the special theory of relativity. He had some valuable clues, in particular the remarkable fact discovered by Galileo that the motion of small bodies in a gravitational field are independent of the nature of the bodies. This suggested to Einstein that gravitation might be a property of space-time itself. Einstein also had available a well-developed mathematical theory of curved spaces that had been worked out by Riemann and other mathematicians in the nineteenth century. It is possible to teach general relativity today by following pretty much the same line of reasoning that Einstein used when he finally wrote up his work in 1915. Then there are the magician-physicists, who do not seem to be reasoning at all but who jump over all intermediate steps to a new insight about nature.<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup> The authors of physics textbooks are usually compelled to redo the work of the magicians so that they seem like sages; otherwise no reader would understand the physics.<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">5</a></sup> Planck was a magician in inventing his 1900 theory of heat radiation, and Einstein was playing the part of a magician when he proposed the idea of the photon in 1905. (Perhaps this is why he later described the photon theory as the most revolutionary thing he had ever done.) It is usually not difficult to understand the papers of sage-physicists, but the papers of magician-physicists are often incomprehensible. In this sense, Heisenberg&rsquo;s 1925 paper was pure magic.<sup class="footnote-ref" id="fnref:6"><a href="#fn:6">6</a></sup></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">“More accurately, the entries in Heisenberg’s table were what are called transition amplitudes, quantities whose squares give the transition rates. Heisenberg was told after he returned. to Gottingen from Heligoland that his mathematical operations on these tables were already well known to mathematicians; such tables were known to mathematicians as matrices and the operation by which one goes from the table representing the velocity of an electron to the table representing its square was known as matrix multiplication. This is one example of the spooky ability of mathematicians to anticipate structures that are relevant to the real world.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">나는 하이젠베르크가 헬골랜드에서 돌아오는 길에 쓴 논문을 여러번 읽었다. 나는 내가 양자 역학을 이해한다고 생각함에도 불구하고 그 논문에서 전개되는 수학적 단계들의 모티베이션을 이해할 수 없었다.
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3">최고의 성공을 거둔 이론 물리학자는 대개 둘 중 하나의 부류에 속한다. 현자이거나 또는 마법사이거나. 현자인 물리학자가 물리 문제를 다룰 때는, 자연이 존재하는 방식에 대한 기본적인 아이디어로부터 출발해서 논리 정연한 방식으로 생각을 전개한다.
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:4">마법사 물리학자는 도대체 논리적 추론이라는 걸 하지 않는 듯 보인다. 그는 모든 중간 단계를 뛰어 넘어서 자연에 대한 새로운 통찰로 그냥 점프해 버린다.
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+<li id="fn:5">물리 교과서의 저자들은 대개 마법사의 작품을 현자의 작품인 것처럼 보이게 바꾸어 쓴다. 그렇게 하지 않으면 아무도 그걸 이해하지 못할 테니까.
+ <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+<li id="fn:6">현자인 물리학자의 논문을 이해하는 것은 그리 어렵지 않다. 그러나 마법사 물리학자의 논문은 이해할 수 없을 때가 있다. 이런 의미에서 하이젠베르크의 1925년 논문은 순수한 마법이다.
+ <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+  </div>
+</div>
+    </div>
+    <div class="main" id="credit"><footer>
+  <div id="credit">
+    <p>page created: 2019.10.14
+      
+        in moments
+      
+      <span id="pretag">SECTIONS & TAXONOMIES</span>:
+      
+  <a href="https://measurable.github.io/fragments/">fragments</a>
+
+  <a href="https://measurable.github.io/moments/">moments</a>
+
+  <a href="https://measurable.github.io/archives/">archives</a>
+
+  <a href="https://measurable.github.io/surveys/">surveys</a>
+
+  <a href="https://measurable.github.io/posts/">posts</a>
+
+  <a href="https://measurable.github.io/docs/">docs</a>
+
+      
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+      measurable, 2019.
+      <a href="https://www.mathjax.org" target="_blank">
+        <img title="Powered by MathJax"
+             src="https://www.mathjax.org/badge/badge.gif"
+             border="0" alt="Powered by MathJax" width="56"/>
+      </a>
+    </p>
+  </div>
+</footer></div>
+  </body>
+</html>

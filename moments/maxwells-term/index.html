@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/theorem.css" />
+  
+
+
+
+
+
+
+
+<script>
+MathJax = {
+  tex: {
+    autoload: { braket: [] },
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    tags: 'ams',
+    macros: {
+      
+      vb: ["{\\bf{#1}}", 1],
+      vi: ["{\\boldsymbol{#1}}", 1],
+      uv: ["{\\hat{\\bf{#1}}}", 1],
+      ui: ["{\\hat{\\boldsymbol{#1}}}", 1],
+      abs: ["{\\left\\vert{#1}\\right\\vert}", 1],
+      norm: ["{\\left\\Vert{#1}\\right\\Vert}", 1],
+      
+      
+      
+      grad: "{\\mathop{\\nabla}}",
+      divergence: ["{\\nabla\\cdot #1}", 1],
+      curl: ["{\\nabla\\times #1}", 1],
+      laplacian: "{\\nabla^2}",
+      dalambert: "{\\Box^2}",
+      diag: ["{\\mathop{\\mathrm{diag}\\left(#1\\right)}}", 1],
+      
+      bra: ["{\\left\\langle{#1}\\right\\vert}", 1],
+      ket: ["{\\left\\vert{#1}\\right\\rangle}", 1],
+      braket: ["{\\left\\langle{#1}\\middle\\vert{#2}\\right\\rangle}", 2],
+      matrel: ["{\\left\\langle{#1}\\middle\\vert{#2}\\middle\\vert{#3}\\right\\rangle}", 3],
+      expect: ["{\\left\\langle{#1}\\right\\rangle}", 1]
+    }
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+  <title>
+    
+      맥스웰의 추가항 &vert; measurable
+    
+  </title>
+</head><body>
+    <div class="sidebar">
+      <div id="measurelogo">
+        <a href='/'><img width="92" src="/images/measurelogo-003300-172.png" onmouseover="this.src='/images/measurelogo-239023-172.png'" onmouseout="this.src='/images/measurelogo-003300-172.png'"></a></div>
+      <div id="measurable">
+        <a href='/'>measurable</a>
+      </div>
+      <div class="navbar">
+        <div id="mainmenu">
+          
+  <a href="/posts/">posts</a>
+
+  <a href="/moments/">moments</a>
+
+  <a href="/surveys/">surveys</a>
+
+  <a href="/fragments/">fragments</a>
+
+  <a href="/archives/">archives</a>
+
+  <a href="/docs/">site.docs</a>
+
+        </div>
+        <div id="taxonomies">
+          
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="main shadowbox" id="article">
+      <header>
+  
+    <p class="pretag" align="center">
+      
+        
+          
+          <a href="https://measurable.github.io/categories/%ED%91%9C%ED%98%84">[표현]</a>
+        
+          
+          <a href="https://measurable.github.io/categories/%EB%B0%A9%EB%B2%95">[방법]</a>
+        
+      
+      
+      
+    </p>
+    <h1> 맥스웰의 추가항 </h1>
+  
+  <div class="motivation">
+    
+      &para;
+      표현의 발견이 사실의 발견으로 이어지는 전형적인 사례. 그래서 이건 방법의 발견에 해당하는 이야기이기도 하다. 하사니가 정당히게 지적한 것처럼 코페르니쿠스 자신에게서 시작된 이런 패턴은 플랑크의 양자, 디랙의 마이너스 해, 찬드라세카르의 블랙홀 등등으로 이어지게 된다. 모두가 물리적으로 가능하지 않은 기상천외한 결과로 인식되는... &#34;Mathematics and the force of logic and human reasoning unravel one of the greatest secrets of Nature!&#34; (S. Hassani) 
+    
+  <div class="ref">
+    
+      <span class="pretag">ref</span>:
+      
+        <span class="refsrc">S. Hassani, Mathematical Methods for Students of physics and Related Fields, 2nd ed. Springer, 2009. pp. 416--</span>
+      
+    
+  </div>
+  </div>
+
+<div><hr></div>
+</header>
+      <div id="content">
+
+   <div>
+    <p>Maxwell&rsquo;s most important achievement was his extension and mathematical formulation of Michael Faraday&rsquo;s theories of electricity and magnetic lines of force. His paper On Faraday&rsquo;s lines of force was read to the Cambridge Philosophical Society in two parts, 1855 and 1856. Maxwell showed that a few relatively simple mathematical equations could express the behavior of electric and magnetic fields and their interrelation.</p>
+
+<p>The four partial differential equations, now known as Maxwell&rsquo;s equations, first appeared in fully developed form in <em>Treatise on Electricity and Magnetism</em> (1873). They are one of the great achievements of nineteenth-century mathematical physics. Solving these equations Maxwell predicted the existence of electromagnetic waves and the fact that these waves propagate at the speed of light (1862). He proposed that the phenomenon of light is therefore an electromagnetic phenomenon.</p>
+
+<p>The differential form of the equations is important because it places particular emphasis on the fields which are the primary objects. The differential form of the equations are:</p>
+
+<p>\begin{align}
+\begin{split}
+\divergence{\vb E}&amp;=\frac\rho{\epsilon_0},\quad&amp;\curl{\vb E}&amp;=-\frac{\partial\vb B}{\partial t}
+\newline
+\divergence{\vb B}&amp;=0,\quad&amp;\curl{\vb B}&amp;=\mu_0\vb J\color{green}+\mu_0\epsilon_0\frac{\partial\vb E}{\partial t}.
+\end{split}
+\label{eq:15.28}
+\end{align}</p>
+
+<hr />
+
+<p><em>Maxwell discovers the inconsistency of Equation \eqref{eq:15.28}&mdash;위의 방정식에서 초록색으로 표시된 부분을 제외한 것&mdash;with the conservation of electric charge, and modifies the last equation to resolve the inconsistency.</em></p>
+
+<p>Maxwell inherited the four equations in \eqref{eq:15.28}, and started pondering about them in the 1860s.
+He noticed that while the second and third are consistent with other aspects of electromagnetism, the other two equations lead to a contradiction.
+Let us retrace his argument. By Equation
+\begin{equation}
+\divergence{(\curl{\vb A})}  =0,
+\label{eq:15.5}
+\end{equation}
+the divergence of the LHS of the last equation of \eqref{eq:15.28} vanishes.
+Therefore, taking the divergence of both sides, we get \(\divergence{\vb J}=0\).
+This contradicts the differential form of the continuity equation for charges which expresses the conservation of electric charge:
+\begin{equation}
+\frac{\partial\rho_Q}{\partial t}+\divergence{\vb J}_Q=0
+\label{eq:13.22}
+\end{equation}</p>
+
+<p>Because of the firm establishment of the <em>charge conservation</em>, Maxwell decided to try altering the four equations to make them compatible with charge conservation. The clue is in the first equation of \eqref{eq:15.28}. If we differentiate that equation with respect to time, we obtain
+\begin{align*}
+\frac\partial{\partial t}\divergence{\vb E}=\frac1{\epsilon_0}\frac{\partial\rho}{\partial t}
+&amp;\implies\divergence{\left(\frac{\partial\rho}{\partial t}\right)}=\frac1{\epsilon_0}\frac{\partial\rho}{\partial t}
+\newline
+&amp;\implies\divergence{\left(\epsilon_0\frac{\partial\vb E}{\partial t}\right)}=\frac{\partial\rho}{\partial t}
+\end{align*}
+This suggested to Maxwell that, if the four equations are to be consistent with charge conservation, the fourth equation had to be modified to include \(\epsilon_0\left(\partial\vb E/\partial t\right)\).
+Hence the complete form of \eqref{eq:15.28}</p>
+
+<p>It was a great moment in the history of physics and mathematics when Maxwell, prompted solely by the forces of logic and pure deduction, introduced the second term(빨강색으로 표시된 항) in the last equation. Such moments were rare prior to Maxwell, and with the exception of Copernicus&rsquo;s introduction of the heliocentric theory of the solar system and Descartes&rsquo;s introduction of analytic geometry, deductive reasoning was the exception rather than the rule. Theories and laws were empirical (or inductive); they were introduced to fit the data and summarize, more or less directly, the numerous observations made. Maxwell broke this tradition and set the stage for deductive reasoning which, after a great deal of struggle to abandon the inductive tradition, became the norm for modern physics.</p>
+
+<p>Today, we aptly call all four equations in \eqref{eq:15.28} Maxwell&rsquo;s equations, although his contribution to those equations was a &ldquo;mere&rdquo; introduction of the second term on the RHS of the last equation. However, no other &ldquo;small&rdquo; contribution has ever affected humankind so enormously. This very &ldquo;small&rdquo; contribution was responsible for Maxwell&rsquo;s prediction of the electromagnetic waves which were subsequently produced in the laboratory in 1887&mdash;only eight years after Maxwell&rsquo;s premature death&mdash;and put to technological use in 1901 in the form of the first radio. Today, Maxwell&rsquo;s equations are at the heart of every electronic device. Without them, our entire civilization, as we know it, would be nonexistent.</p>
+
+  </div>
+</div>
+    </div>
+    <div class="main" id="credit"><footer>
+  <div id="credit">
+    <p>page created: 2019.10.02
+      
+        in moments
+      
+      <span id="pretag">SECTIONS & TAXONOMIES</span>:
+      
+  <a href="https://measurable.github.io/fragments/">fragments</a>
+
+  <a href="https://measurable.github.io/moments/">moments</a>
+
+  <a href="https://measurable.github.io/archives/">archives</a>
+
+  <a href="https://measurable.github.io/surveys/">surveys</a>
+
+  <a href="https://measurable.github.io/posts/">posts</a>
+
+  <a href="https://measurable.github.io/docs/">docs</a>
+
+      
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+      measurable, 2019.
+      <a href="https://www.mathjax.org" target="_blank">
+        <img title="Powered by MathJax"
+             src="https://www.mathjax.org/badge/badge.gif"
+             border="0" alt="Powered by MathJax" width="56"/>
+      </a>
+    </p>
+  </div>
+</footer></div>
+  </body>
+</html>

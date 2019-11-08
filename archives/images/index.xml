@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>이미지 아카이브 on measurable</title>
+    <link>https://measurable.github.io/archives/images/</link>
+    <description>Recent content in 이미지 아카이브 on measurable</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Sep 2019 20:01:38 +0900</lastBuildDate>
+    
+	<atom:link href="https://measurable.github.io/archives/images/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hydrogen Density</title>
+      <link>https://measurable.github.io/archives/images/hydrogen-density/</link>
+      <pubDate>Mon, 23 Sep 2019 18:49:29 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/archives/images/hydrogen-density/</guid>
+      <description>실험을 통해 이 그림을 볼 수 있는 방법은 아마 이럴 것이다: 수소 원자에 속박되어 있는 전자의 위치를 수천번쯤 관찰해서 그 위치를 점으로 찍어보면 대략 이런 그림이 나타날 것이다. 가령 전자가 핵 주위의 정해진 원 궤도를 정해진 속도로 돌고 있다고 해보자. 궤도는 관찰을 하건 하지 않건 전자가 특정 시각에 특정 위치에 존재한다는 것을 보여준다. 그래서 궤도의 점 하나 하나는 전자의 well-defined된(즉 &amp;ldquo;객관적으로 존재하는&amp;rdquo;) 속성을 나타낸다. 그것이 궤도가 보여주는 &amp;ldquo;실재&amp;rdquo;의 의미다.
+그럼, 아래의 density plot에 반영되는 실재란 무엇인가?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://measurable.github.io/archives/images/kmh-gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://measurable.github.io/archives/images/kmh-gallery/</guid>
+      <description>kmh arts   html, body, .container, .doublecontainer { width: 100%; /* undo comment-out when inline images included ! height: 100%; */ } body { background: #1f1f1f; font-family: &#39;Noto Sans KR&#39;, sans-serif; } .container, .doublecontainer { display: flex; flex-wrap: wrap; } .imagebundle { padding-right: 4px; position: relative; } .articleheader { width: 32.6%; height: auto; } .inline { width: auto; padding-bottom: 4px; } .single { height: 20%; } .double { height: 40%; } img.</description>
+    </item>
+    
+  </channel>
+</rss>

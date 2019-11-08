@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>방법 on measurable</title>
+    <link>https://measurable.github.io/categories/%EB%B0%A9%EB%B2%95/</link>
+    <description>Recent content in 방법 on measurable</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Oct 2019 21:19:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://measurable.github.io/categories/%EB%B0%A9%EB%B2%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>맥스웰의 추가항</title>
+      <link>https://measurable.github.io/moments/maxwells-term/</link>
+      <pubDate>Wed, 02 Oct 2019 21:19:15 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/moments/maxwells-term/</guid>
+      <description>Maxwell&amp;rsquo;s most important achievement was his extension and mathematical formulation of Michael Faraday&amp;rsquo;s theories of electricity and magnetic lines of force. His paper On Faraday&amp;rsquo;s lines of force was read to the Cambridge Philosophical Society in two parts, 1855 and 1856. Maxwell showed that a few relatively simple mathematical equations could express the behavior of electric and magnetic fields and their interrelation.
+The four partial differential equations, now known as Maxwell&amp;rsquo;s equations, first appeared in fully developed form in Treatise on Electricity and Magnetism (1873).</description>
+    </item>
+    
+  </channel>
+</rss>

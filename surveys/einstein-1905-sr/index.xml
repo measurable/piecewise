@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>움직이는 물체의 전기동역학에 관하여 on measurable</title>
+    <link>https://measurable.github.io/surveys/einstein-1905-sr/</link>
+    <description>Recent content in 움직이는 물체의 전기동역학에 관하여 on measurable</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Sep 2019 16:42:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://measurable.github.io/surveys/einstein-1905-sr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>10. 천천히 가속되는 전자의 동역학</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/10-dynamics-of-the-slowly-accelerated-electron/</link>
+      <pubDate>Sun, 22 Sep 2019 16:56:30 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/10-dynamics-of-the-slowly-accelerated-electron/</guid>
+      <description>&amp;sect;10. 천천히 가속되는 전자의 동역학 하전된 입자(앞으로 &amp;ldquo;전자&amp;rdquo;라고 부르자)가 전자기장 안에서 움직이고 있다고 하고, 그 운동 법칙이 다음과 같다고 전제하자.
+주어진 시점에 전자가 멈춰있었다면 그 직후의 운동은 다음 방정식을 따른다. \[ m\frac{d^2x}{dt^2}=\epsilon X,\quad m\frac{d^2y}{dt^2}=\epsilon Y,\quad m\frac{d^2z}{dt^2}=\epsilon Z. \] 단, \(x,y,z\)는 전자의 좌표를, 그리고 \(m\)은 전자가 천천히 움직이고 있을 때의 질량을 나타낸다.
+이제 주어진 순간에 전자의 속도가 \(v\)라고 하고 그 직후의 운동을 결정하는 법칙을 구한다.
+전자가 좌표계 \(K\)의 \(X\)축을 따라 움직이고 있으며, 현재 속도는 \(v\), 현재 위치는 원점이라고 놓아도 논의의 일반성을 잃지 않는다.</description>
+    </item>
+    
+    <item>
+      <title>9. 대류(Convection-Currents)를 감안한 맥스웰-헤르츠 방정식의 변환</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/9-maxwell-equation-in-convection-currents/</link>
+      <pubDate>Sun, 22 Sep 2019 16:55:07 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/9-maxwell-equation-in-convection-currents/</guid>
+      <description>II. 전기동역학 (Electrodynamical Part) &amp;sect;9. 대류(Convection-Currents)를 감안한 맥스웰-헤르츠 방정식의 변환 다음 방정식에서 시작하자. \begin{align*} \frac{1}{c}\left\{\frac{\partial X}{\partial t}+u_x\rho\right\}&amp;amp;=\frac{\partial N}{\partial y}-\frac{\partial M}{\partial z},&amp;amp;\frac{1}{c}\frac{\partial L}{\partial t}&amp;amp;=\frac{\partial Y}{\partial z}-\frac{\partial Z}{\partial y}, \newline \frac{1}{c}\left\{\frac{\partial Y}{\partial t}+u_y\rho\right\}&amp;amp;=\frac{\partial L}{\partial z}-\frac{\partial N}{\partial x},&amp;amp;\frac{1}{c}\frac{\partial M}{\partial t}&amp;amp;=\frac{\partial Z}{\partial x}-\frac{\partial X}{\partial z}, \newline \frac{1}{c}\left\{\frac{\partial Z}{\partial t}+u_z\rho\right\}&amp;amp;=\frac{\partial M}{\partial x}-\frac{\partial L}{\partial y},&amp;amp;\frac{1}{c}\frac{\partial N}{\partial t}&amp;amp;=\frac{\partial X}{\partial y}-\frac{\partial Y}{\partial x}, \end{align*} 단, \[ \rho=\frac{\partial X}{\partial x}+\frac{\partial Y}{\partial y}+\frac{\partial Z}{\partial z} \] 는 전하밀도의 \(4\pi\)배를, \((u_x,u_y,u_z)\)는 전하의 속도벡터를 나타낸다.</description>
+    </item>
+    
+    <item>
+      <title>8. 광선 에너지의 변환. 복사가 완전반사체에 주는 압력에 관한 이론</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/8-transformation-of-energy-of-light-rays/</link>
+      <pubDate>Sun, 22 Sep 2019 16:54:00 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/8-transformation-of-energy-of-light-rays/</guid>
+      <description>II. 전기동역학 (Electrodynamical Part) &amp;sect;8. 광선 에너지의 변환. 복사가 완전반사체에 주는 압력에 관한 이론 단위 부피당 빛에너지가 \(A^2/8\pi\)이므로, 상대성 원리에 따르면 움직이는 좌표계에서의 빛에너지는 \(A&amp;rsquo;^2/8\pi\)라고 보아야 한다. 그래서 만약 빛덩어리(light complex)의 부피가 \(K\)와 \(k\) 어떤 좌표계에서 측정하든 같다면, \(A&amp;rsquo;^2/A^2\)가 그 에너지를 &amp;ldquo;움직일 때 측정한 값&amp;rdquo;의 &amp;ldquo;멈춰있을 때 측정한 값&amp;rdquo;에 대한 비가 될 것이다. 그러나 실제로는 그렇지 않다. 정지 좌표계에서 빛 파동의 법선의 방향코사인을 \(l,m,n\)이라고 하자. 광속으로 움직이는 구면 \[ (x-lct)^2+(y-mct)^2+(z-nct)^2=R^2 \] 의 표면요소를 에너지가 빠져나갈 수 없다.</description>
+    </item>
+    
+    <item>
+      <title>7. 도플러 원리 및 광행차에 관한 이론</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/7-dopplers-principle-and-aberation/</link>
+      <pubDate>Sun, 22 Sep 2019 16:53:29 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/7-dopplers-principle-and-aberation/</guid>
+      <description>II. 전기동역학 (Electrodynamical Part) &amp;sect;7. 도플러 원리 및 광행차에 관한 이론 전기동역학적 파원이 좌표계 \(K\)의 원점에서 아주 멀리 떨어진 곳에 있다면, 원점 근방에서 그 파동은 다음 방정식으로 충분히 근사시킬 수 있다. \begin{align*} X&amp;amp;=X_0\sin\Phi,&amp;amp;L&amp;amp;=L_0\sin\Phi, \newline Y&amp;amp;=Y_0\sin\Phi,&amp;amp;M&amp;amp;=M_0\sin\Phi, \newline Z&amp;amp;=Z_0\sin\Phi,&amp;amp;N&amp;amp;=N_0\sin\Phi, \end{align*} 단, \[ \Phi=\omega\left\{t-\frac{1}{c}(lx+my+nz)\right\}. \] 여기서 \((X_0,Y_0,Z_0)\)과 \((L_0,M_0,N_0)\)은 파열(wave train)의 진폭을 정의하는 벡터이고 \(l,m,n\)은 파의 법선(wave-normals)의 방향코사인들이다.
+이제 움직이는 좌표계 \(k\)에 대해 멈춰있는 관찰자를 기준으로 해서 파동의 구성을 알아보자. &amp;sect;6.에서 얻은 전기력 및 자기력의 변환 공식과 &amp;sect;3.</description>
+    </item>
+    
+    <item>
+      <title>6. 진공에서의 맥스웰-헤르츠 방정식의 변환. 운동에 의해 자기장 안에서 발생하는 기전력의 본질에 관하여</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/6-transformation-of-the-maxwell-equations/</link>
+      <pubDate>Sun, 22 Sep 2019 16:52:47 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/6-transformation-of-the-maxwell-equations/</guid>
+      <description>II. 전기동역학 (Electrodynamical Part) &amp;sect;6. 진공에서의 맥스웰-헤르츠 방정식의 변환. 운동에 의해 자기장 안에서 발생하는 기전력의 본질에 관하여 빈 공간에서의 맥스웰-헤르츠 방정식이 정지 좌표계 \(K\)에서 성립한다고 하자. 즉, 전기력 벡터를 \((X,Y,Z)\), 자기력 벡터를 \((L,M,N)\)로 나타내면 이들은 다음 관계를 가진다. \begin{align*} \frac{1}{c}\frac{\partial X}{\partial t}&amp;amp;=\frac{\partial N}{\partial y}-\frac{\partial M}{\partial z},&amp;amp;\frac{1}{c}\frac{\partial L}{\partial t}&amp;amp;=\frac{\partial Y}{\partial z}-\frac{\partial Z}{\partial y}, \newline \frac{1}{c}\frac{\partial Y}{\partial t}&amp;amp;=\frac{\partial L}{\partial z}-\frac{\partial N}{\partial x},&amp;amp;\frac{1}{c}\frac{\partial M}{\partial t}&amp;amp;=\frac{\partial Z}{\partial x}-\frac{\partial X}{\partial z}, \newline \frac{1}{c}\frac{\partial Z}{\partial t}&amp;amp;=\frac{\partial M}{\partial x}-\frac{\partial L}{\partial y},&amp;amp;\frac{1}{c}\frac{\partial N}{\partial t}&amp;amp;=\frac{\partial X}{\partial y}-\frac{\partial Y}{\partial x}.</description>
+    </item>
+    
+    <item>
+      <title>5. 속도의 합성</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/5-composition-of-velocities/</link>
+      <pubDate>Sun, 22 Sep 2019 16:52:02 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/5-composition-of-velocities/</guid>
+      <description>I. 운동학 (Kinematic Part) &amp;sect;5. 속도의 합성 좌표계 \(k\)가 좌표계 \(K\)의 \(X\)축을 따라 속도 \(v\)로 움직이고 있다. 한 점이 \(k\)를 기준으로 다음 방정식에 따라 상대 운동 한다고 하자. \[ \xi=w_\xi\tau,\quad\eta=w_\eta\tau,\quad\zeta=0, \] 단, \(w_\xi\)와 \(w_\eta\)는 상수이다.
+문제: 이 점의 좌표계 \(K\)에 대한 상대 운동을 구하라. &amp;sect;3.에서 얻은 변환 공식을 이용해서 위의 운동방정식을 좌표 \(x,y,z,t\)로 나타내면 다음과 같다. \[\begin{aligned} x&amp;amp;=\frac{w_\xi+v}{1+\frac{vw_\xi}{c^2}}t, \newline y&amp;amp;=\frac{\sqrt{1-\left(\frac vc\right)^2}}{1+\frac{vw_\xi}{c^2}}w_\eta t, \newline z&amp;amp;=0. \end{aligned}\]
+그래서 우리 이론에서는 속도 합성에 관한 평행사변형 법칙이 단지 1차 근사로만 성립한다.</description>
+    </item>
+    
+    <item>
+      <title>4. 움직이는 강체와 움직이는 시계에 관해 얻은 방정식의 물리적 의미</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/4-physical-meaning/</link>
+      <pubDate>Sun, 22 Sep 2019 16:51:21 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/4-physical-meaning/</guid>
+      <description>I. 운동학 (Kinematic Part) &amp;sect;4. 움직이는 강체와 움직이는 시계에 관해 얻은 방정식의 물리적 의미 움직이는 좌표계 \(k\)를 기준으로 그 원점에 중심을 두고 멈춰있는 반지름 \(R\)의 강체 구면1 을 생각하자. 이 구면은 좌표계 \(K\)에 대해서는 속도 \(v\)로 상대 운동한다. 구면의 방정식은 다음과 같다. \[ \xi^2+\eta^2+\zeta^2=R^2 \] 이 구면의 방정식을 시각 \(t=0\)에서의 좌표 \(x,y,z\)로 나타내면 다음과 같다. \[ \frac{x^2}{\left(\sqrt{1-\left(\frac vc\right)^2}\right)^2}+y^2+z^2=R^2. \] 그러므로 멈춘 상태에서 측정하면 구형인 강체가&amp;mdash;정지 좌표계에서 봐서&amp;mdash;움직이는 상태가 되면 그 모양이 \[ R\sqrt{1-\left(\frac vc\right)^2},\quad R,\quad R \] 을 축으로 하는 회전타원면이 된다.</description>
+    </item>
+    
+    <item>
+      <title>3. 정지 좌표계로부터 상대 등속 병진운동 하는 다른 좌표계로의 좌표 및 시간 변환에 관한 이론</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/3-transformation-of-coordinates-and-time/</link>
+      <pubDate>Sun, 22 Sep 2019 16:49:44 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/3-transformation-of-coordinates-and-time/</guid>
+      <description>I. 운동학 (Kinematic Part) &amp;sect;3. 정지 좌표계로부터 상대 등속 병진운동 하는 다른 좌표계로의 좌표 및 시간 변환에 관한 이론 &amp;ldquo;정지&amp;rdquo; 공간(stationary space)에 두 개의 좌표계를 준다.
+각각은 한 점에서 나온 강체 직선 세 개가 서로 수직인 방향으로 뻗어나가는 계이다. 두 좌표계의 \(X\)축은 겹쳐 있으며, \(Y\)축 끼리, 그리고 \(Z\)축 끼리는 평행하다. 각 좌표계에 강체로 만들어진 자와 시계들이 있으며, 그 자와 시계들은 모든 면에서 서로 같은 것들이라고 하자.
+둘 중 한 좌표계(\(k\))의 원점에 다른 정지 좌표계(\(K\))의 \(x\) 값이 증가하는 방향으로 등속 \(v\)를 주자.</description>
+    </item>
+    
+    <item>
+      <title>2. 길이와 시간의 상대성에 관하여</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/2-relativity-of-length-and-time/</link>
+      <pubDate>Sun, 22 Sep 2019 16:48:52 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/2-relativity-of-length-and-time/</guid>
+      <description>I. 운동학 (Kinematic Part) &amp;sect;2. 길이와 시간의 상대성에 관하여 지금부터의 논의는 상대성 원리와 광속 불변의 원리에 기초한다. 이 두가지 원리를 다음과 같이 정의한다.
+ 서로에 대해 등속 병진운동하는 두 좌표계가 있을 때, 물리계의 상태가 변해가는 법칙은 그 둘 중 어떤 것을 기준으로 하는지에 영향받지 않는다. 발광체가 정지해 있든 움직이든 관계 없이, &amp;ldquo;정지&amp;rdquo; 좌표계에서 광선은 \(c\)의 속도로 움직인다. 따라서 \[ 속도=\frac{빛의경로}{경과시간} \] 에서 경과 시간은 &amp;sect;1.에서 준 정의에 따라 정해진다.  정지해 있는 강체 막대가 있고, 역시 정지한 자로 잰 막대의 길이가 \(l\)이라고 하자.</description>
+    </item>
+    
+    <item>
+      <title>1. 동시성(simultaneity)의 정의</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/1-simultaneity/</link>
+      <pubDate>Sun, 22 Sep 2019 16:47:27 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/1-simultaneity/</guid>
+      <description>I. 운동학 (Kinematic Part) &amp;sect;1. 동시성(simultaneity)의 정의 뉴턴 역학의 방정식들이 1차 근사에서 들어맞는 좌표계를 생각하자. 논의를 보다 엄밀하게 하고 다음에 도입할 다른 좌표계와 구별하기 위해 이 좌표계를 &amp;ldquo;정지 좌표계(stationary system)&amp;ldquo;라고 부르자.
+질점이 이 좌표계에 대해 멈춰있으면, 일관된 측정 기준을 주고 유클리드 기하의 방법을 사용해서 그 좌표계를 기준으로 한 위치를 정의할 수 있고, 이를 데카르트 좌표로 나타낼 수 있다.
+만약 질점의 운동을 기술(describe)하고 싶으면 그 좌표를 시간의 함수로 나타내면 된다. 이 때, 이와 같은 수학적 기술이 물리적 의미를 가지려면 &amp;ldquo;시간&amp;rdquo;이 무엇을 가리키는지 아주 명확해야 한다는 점을 유의해야 한다.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://measurable.github.io/surveys/einstein-1905-sr/intro/</link>
+      <pubDate>Sun, 22 Sep 2019 16:46:42 +0900</pubDate>
+      
+      <guid>https://measurable.github.io/surveys/einstein-1905-sr/intro/</guid>
+      <description>잘 알려져 있듯이, 맥스웰의 전기동역학을 움직이는 물체에 적용하면 현상에 내재하지 않는 비대칭성을 만나게 된다. 자석과 도체의 전기동역학적 상호작용을 예로 들어보자. 여기서 관측되는 현상은 오직 도체와 자석 사이의 상대 운동에만 의존한다. 반면, 통상적인 관점에서는 이 두 물체 중에서 어떤 것이 움직이는가를 분명하게 구별한다. 만약 자석이 움직이고 도체가 멈춰있다면 자석 근방에 특정한 에너지를 가진 전기장이 형성되고 도체가 놓여 있는 부분에 전류가 발생한다. 반면, 자석이 정지해 있고 도체가 움직이면 자석 근방에 전기장이 형성되지 않는다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/theorem.css" />
+  
+
+
+
+
+
+
+
+<script>
+MathJax = {
+  tex: {
+    autoload: { braket: [] },
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    tags: 'ams',
+    macros: {
+      
+      vb: ["{\\bf{#1}}", 1],
+      vi: ["{\\boldsymbol{#1}}", 1],
+      uv: ["{\\hat{\\bf{#1}}}", 1],
+      ui: ["{\\hat{\\boldsymbol{#1}}}", 1],
+      abs: ["{\\left\\vert{#1}\\right\\vert}", 1],
+      norm: ["{\\left\\Vert{#1}\\right\\Vert}", 1],
+      
+      
+      
+      grad: "{\\mathop{\\nabla}}",
+      divergence: ["{\\nabla\\cdot #1}", 1],
+      curl: ["{\\nabla\\times #1}", 1],
+      laplacian: "{\\nabla^2}",
+      dalambert: "{\\Box^2}",
+      diag: ["{\\mathop{\\mathrm{diag}\\left(#1\\right)}}", 1],
+      
+      bra: ["{\\left\\langle{#1}\\right\\vert}", 1],
+      ket: ["{\\left\\vert{#1}\\right\\rangle}", 1],
+      braket: ["{\\left\\langle{#1}\\middle\\vert{#2}\\right\\rangle}", 2],
+      matrel: ["{\\left\\langle{#1}\\middle\\vert{#2}\\middle\\vert{#3}\\right\\rangle}", 3],
+      expect: ["{\\left\\langle{#1}\\right\\rangle}", 1]
+    }
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+  <title>
+    
+      fourier&#39;s heat &vert; measurable
+    
+  </title>
+</head><body>
+    <div class="sidebar">
+      <div id="measurelogo">
+        <a href='/'><img width="92" src="/images/measurelogo-003300-172.png" onmouseover="this.src='/images/measurelogo-239023-172.png'" onmouseout="this.src='/images/measurelogo-003300-172.png'"></a></div>
+      <div id="measurable">
+        <a href='/'>measurable</a>
+      </div>
+      <div class="navbar">
+        <div id="mainmenu">
+          
+  <a href="/posts/">posts</a>
+
+  <a href="/moments/">moments</a>
+
+  <a href="/surveys/">surveys</a>
+
+  <a href="/fragments/">fragments</a>
+
+  <a href="/archives/">archives</a>
+
+  <a href="/docs/">site.docs</a>
+
+        </div>
+        <div id="taxonomies">
+          
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="main shadowbox" id="article">
+      <header>
+  
+    <p class="pretag" align="center"><a href="../">moment</a></p>
+    <h1>fourier&#39;s heat</h1>
+  
+  <div class="motivation">
+    
+      &para;
+      &#34;... first developed and solved by Joseph Fourier in 1822 to describe heat flow, however, it is of fundamental importance in diverse scientific fields. In probability theory, connected with the study of random walks and Brownian motion... In financial mathematics, used to solve the Black–Scholes partial differential equation. In Quantum Mechanics, for finding spread of wave function in potential free region. A variant was also instrumental in the solution of the longstanding Poincaré conjecture of topology.&#34;(위키, &#34;Heat Equation&#34;, 푸리에의 열방정식은 방정식 자체에 대한 해설이 필요할 정도로 중요하고, 매우 제너럴하고 강력한 생각법으로서 미분방정식이 가지는 의미를 보여주는 표준적인 사례니까 글모음으로 만들자.)
+    
+  <div class="ref">
+    
+      <span class="pretag">ref</span>:
+      
+        <span class="refsrc">T. N. Narasimhan,  &#39;Fourier&#39;s Heat Conduction Equation: History, Influences and Connections&#39;</span>
+      
+    
+  </div>
+  </div>
+
+<div><hr></div>
+</header>
+      <div id="content">
+  <div>
+    
+      <h3 class="pretag">글목록</h3>
+
+      <div>
+        <p>푸리에의 열방정식을 현대의 벡터 해석 표기법을 사용해서 나타내면 다음과 같다:
+\[
+\divergence{K\grad T}=c\frac{\partial T}{\partial t}
+\]</p>
+
+<p>\(K\)는 열전도율(thermal conductivity), \(T\)는 온도, \(c\)는 고체의 단위 부피당 비열용량(specific heat capacity)이다.<sup class="footnote-ref" id="fnref:fh-1"><a href="#fn:fh-1">1</a></sup>
+이 방정식은 열이 흐르는 영역 내부에서 열이 보존된다는 의미를 가진다.</p>
+
+<p>cf: 위키의 (<a href="https://en.wikipedia.org/wiki/Heat_equation" target="_blank">Heat equation</a>)항목에서는 처음부터 함수 \(u(x,y,z,t)\)을 써서 좀 더 일반적인 방식으로 도입하고 있다:
+\[
+\frac{\partial u}{\partial t}=\alpha\left(\frac{\partial^2u}{\partial^2 x}+\frac{\partial^2u}{\partial^2 y}+\frac{\partial^2u}{\partial^2 z}\right)
+\]
+이 때, \(\alpha\)는 실계수이며, 매질의 확산율(diffusivity)이라고 한다.
+라플라시안을 사용해서 다음과 같이 간단히 나타낼 수 있다.
+\[
+\dot u=\alpha\laplacian u.
+\]</p>
+
+<p>다음 그림은 1차원에서 열방정식의 해를 나타낸다.</p>
+
+<p><a title="" href="https://en.wikipedia.org/wiki/Heat_equation#/media/File:Heatequation_exampleB.gif" target="_blank" class="imglink"><img width="48%" alt="" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Heatequation_exampleB.gif" class="center"></a></p>
+
+<p><img width="98%" alt="" src="figures/fouriers-heat.png" class="center"></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:fh-1">Narasimhan, p. 122
+ <a class="footnote-return" href="#fnref:fh-1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    </div>
+    <div class="main" id="credit"><footer>
+  <div id="credit">
+    <p>section created: 2019.10.14
+      
+      <span id="pretag">SECTIONS & TAXONOMIES</span>:
+      
+  <a href="https://measurable.github.io/fragments/">fragments</a>
+
+  <a href="https://measurable.github.io/moments/">moments</a>
+
+  <a href="https://measurable.github.io/archives/">archives</a>
+
+  <a href="https://measurable.github.io/surveys/">surveys</a>
+
+  <a href="https://measurable.github.io/posts/">posts</a>
+
+  <a href="https://measurable.github.io/docs/">docs</a>
+
+      
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+      measurable, 2019.
+      <a href="https://www.mathjax.org" target="_blank">
+        <img title="Powered by MathJax"
+             src="https://www.mathjax.org/badge/badge.gif"
+             border="0" alt="Powered by MathJax" width="56"/>
+      </a>
+    </p>
+  </div>
+</footer></div>
+  </body>
+</html>

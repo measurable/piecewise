@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/theorem.css" />
+  
+
+
+
+
+
+
+
+<script>
+MathJax = {
+  tex: {
+    autoload: { braket: [] },
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    tags: 'ams',
+    macros: {
+      
+      vb: ["{\\bf{#1}}", 1],
+      vi: ["{\\boldsymbol{#1}}", 1],
+      uv: ["{\\hat{\\bf{#1}}}", 1],
+      ui: ["{\\hat{\\boldsymbol{#1}}}", 1],
+      abs: ["{\\left\\vert{#1}\\right\\vert}", 1],
+      norm: ["{\\left\\Vert{#1}\\right\\Vert}", 1],
+      
+      
+      
+      grad: "{\\mathop{\\nabla}}",
+      divergence: ["{\\nabla\\cdot #1}", 1],
+      curl: ["{\\nabla\\times #1}", 1],
+      laplacian: "{\\nabla^2}",
+      dalambert: "{\\Box^2}",
+      diag: ["{\\mathop{\\mathrm{diag}\\left(#1\\right)}}", 1],
+      
+      bra: ["{\\left\\langle{#1}\\right\\vert}", 1],
+      ket: ["{\\left\\vert{#1}\\right\\rangle}", 1],
+      braket: ["{\\left\\langle{#1}\\middle\\vert{#2}\\right\\rangle}", 2],
+      matrel: ["{\\left\\langle{#1}\\middle\\vert{#2}\\middle\\vert{#3}\\right\\rangle}", 3],
+      expect: ["{\\left\\langle{#1}\\right\\rangle}", 1]
+    }
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+  <title>
+    
+      7. 도플러 원리 및 광행차에 관한 이론 &vert; measurable
+    
+  </title>
+</head><body>
+    <div class="sidebar">
+      <div id="measurelogo">
+        <a href='/'><img width="92" src="/images/measurelogo-003300-172.png" onmouseover="this.src='/images/measurelogo-239023-172.png'" onmouseout="this.src='/images/measurelogo-003300-172.png'"></a></div>
+      <div id="measurable">
+        <a href='/'>measurable</a>
+      </div>
+      <div class="navbar">
+        <div id="mainmenu">
+          
+  <a href="/posts/">posts</a>
+
+  <a href="/moments/">moments</a>
+
+  <a href="/surveys/">surveys</a>
+
+  <a href="/fragments/">fragments</a>
+
+  <a href="/archives/">archives</a>
+
+  <a href="/docs/">site.docs</a>
+
+        </div>
+        <div id="taxonomies">
+          
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="main shadowbox" id="article">
+      <header>
+  
+    <p class="pretag" align="center">
+      
+        
+          
+          <a href="https://measurable.github.io/categories/%ED%91%9C%ED%98%84">[표현]</a>
+        
+      
+      
+        <a href="../">움직이는 물체의 전기동역학에 관하여</a>
+      
+      
+    </p>
+    <h1> 7. 도플러 원리 및 광행차에 관한 이론 </h1>
+  
+  <div class="motivation">
+    
+  <div class="ref">
+    
+  </div>
+  </div>
+
+<div><hr></div>
+</header>
+      <div id="content">
+
+   <div>
+    
+
+<h4 id="ii-전기동역학-electrodynamical-part">II. 전기동역학 (Electrodynamical Part)</h4>
+
+<h2 id="sect-7-도플러-원리-및-광행차에-관한-이론">&sect;7. 도플러 원리 및 광행차에 관한 이론</h2>
+
+<p>전기동역학적 파원이 좌표계 \(K\)의 원점에서 아주 멀리 떨어진 곳에 있다면,
+원점 근방에서 그 파동은 다음 방정식으로 충분히 근사시킬 수 있다.
+\begin{align*}
+X&amp;=X_0\sin\Phi,&amp;L&amp;=L_0\sin\Phi,
+\newline
+Y&amp;=Y_0\sin\Phi,&amp;M&amp;=M_0\sin\Phi,
+\newline
+Z&amp;=Z_0\sin\Phi,&amp;N&amp;=N_0\sin\Phi,
+\end{align*}
+단,
+\[
+\Phi=\omega\left\{t-\frac{1}{c}(lx+my+nz)\right\}.
+\]
+여기서 \((X_0,Y_0,Z_0)\)과 \((L_0,M_0,N_0)\)은 파열(wave train)의 진폭을 정의하는 벡터이고 \(l,m,n\)은 파의 법선(wave-normals)의 방향코사인들이다.</p>
+
+<p>이제 움직이는 좌표계 \(k\)에 대해 멈춰있는 관찰자를 기준으로 해서 파동의 구성을 알아보자.
+&sect;6.에서 얻은 전기력 및 자기력의 변환 공식과 &sect;3.에서 얻은 좌표 및 시간의 변환 공식을 사용하면 다음 관계를 바로 얻는다.
+\begin{align*}
+X&rsquo;&amp;=X_0\sin\Phi&rsquo;,&amp;L&rsquo;&amp;=L_0\sin\Phi&rsquo;,
+\newline
+Y&rsquo;&amp;=\beta\left(Y_0-\frac vcN_0\right)\sin\Phi&rsquo;,&amp;M&rsquo;&amp;=\beta\left(M_0+\frac vcZ_0\right)\sin\Phi&rsquo;,
+\newline
+Z&rsquo;&amp;=\beta\left(Z_0+\frac vcM_0\right)\sin\Phi&rsquo;,&amp;N&rsquo;&amp;=\beta\left(N_0-\frac vcY_0\right)\sin\Phi&rsquo;.
+\end{align*}
+단,
+\[
+\Phi&rsquo;=\omega&rsquo;\left\{\tau-\frac{1}{c}\left(l&rsquo;\xi+m&rsquo;\eta+n&rsquo;\zeta\right)\right\},
+\]
+그리고</p>
+
+<p>\begin{align*}
+\omega&rsquo;&amp;=\omega\beta(1-l\frac vc),
+\newline
+l&rsquo;&amp;=\frac{l-\frac vc}{1-l\frac vc},
+\newline
+m&rsquo;&amp;=\frac{m}{\beta\left(1-l\frac vc\right)},
+\newline
+n&rsquo;&amp;=\frac{n}{\beta\left(1-l\frac vc\right)}.
+\end{align*}</p>
+
+<p>\(\omega&rsquo;\)에 관한 방정식에서 다음 결과를 얻는다.
+무한히 멀리 있고 주파수가 \(\nu\)인 광원에 대해 관찰자가 속도 \(v\)로 상대 운동 하고,
+이 광원에 대해 멈춰있는 좌표계를 기준으로 한 관찰자의 상대속도와 &ldquo;광원-관찰자&rdquo; 연결선이 이루는 각이 \(\phi\)라고 하자.
+그러면 관찰자가 보는 빛의 주파수 \(\nu&rsquo;\)는 다음 식으로 주어진다:
+\[
+\nu&rsquo;=\nu\frac{1-\cos\phi\,\frac vc}{\sqrt{1-\left(\frac vc\right)^2}}
+\]
+이것은 임의의 속도에 관한 도플러 원리(Doppler&rsquo;s principle)다.
+\(\phi=0\)이면 방정식은 간결한 꼴을 갖게 된다.
+\[
+\nu&rsquo;=\nu\sqrt{\frac{1-\frac vc}{1+\frac vc}}.
+\]
+통상적인 견해와 달리 \(v=-c\)일 때 \(\nu&rsquo;=\infty\)임을 알 수 있다.</p>
+
+<p>움직이는 좌표계를 기준으로 한 빛 파동의 법선과 &ldquo;광원-관찰자&rdquo; 연결선 사이의 각을 \(\phi&rsquo;\)라고 하면, \(l&rsquo;\)의 방정식은 다음과 같다.
+\[
+\cos\phi&rsquo;=\frac{\cos\phi-\frac vc}{1-\frac vc\cos\phi}.
+\]
+이 식은 광행차의 법칙을 가장 일반적인 형식으로 표현한다.
+만약 \(\phi=\frac{1}{2}\pi\)이면 방정식은 다음과 같이 간단해진다.
+\[
+\cos\phi&rsquo;=-\frac vc.
+\]</p>
+
+<p>이제 움직이는 좌표계에서 파의 진폭을 구해야 한다.
+전기력 또는 자기력의 진폭을 정지 좌표계와 움직이는 좌표계에서 측정한 값을 각각 \(A\), \(A&rsquo;\)이라 두면 다음 관계를 얻는다.</p>
+
+<p>\[
+A&rsquo;^2=A^2\frac{\left(1-\frac vc\cos\phi\right)^2}{1-\left(\frac vc\right)^2}.
+\]
+\(\phi=0\)이면 식이 간단해진다.
+\[
+A&rsquo;^2=A^2\frac{1-\frac vc}{1+\frac vc}.
+\]</p>
+
+<p>이로부터, 속도 \(c\)로 광원에 접근하는
+관찰자에게는 이 광원의 세기가 무한히 크게 보인다는 결론을 얻는다.</p>
+
+  </div>
+</div>
+    </div>
+    <div class="main" id="credit"><footer>
+  <div id="credit">
+    <p>page created: 2019.09.22
+      
+        in surveys
+      
+      <span id="pretag">SECTIONS & TAXONOMIES</span>:
+      
+  <a href="https://measurable.github.io/fragments/">fragments</a>
+
+  <a href="https://measurable.github.io/moments/">moments</a>
+
+  <a href="https://measurable.github.io/archives/">archives</a>
+
+  <a href="https://measurable.github.io/surveys/">surveys</a>
+
+  <a href="https://measurable.github.io/posts/">posts</a>
+
+  <a href="https://measurable.github.io/docs/">docs</a>
+
+      
+  <span class="taxonomy">
+    <a href='/categories'>categories</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/keywords'>keywords</a>
+  </span>
+
+  <span class="taxonomy">
+    <a href='/tags'>tags</a>
+  </span>
+
+
+
+      measurable, 2019.
+      <a href="https://www.mathjax.org" target="_blank">
+        <img title="Powered by MathJax"
+             src="https://www.mathjax.org/badge/badge.gif"
+             border="0" alt="Powered by MathJax" width="56"/>
+      </a>
+    </p>
+  </div>
+</footer></div>
+  </body>
+</html>
